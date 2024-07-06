@@ -12,6 +12,7 @@ function Input({ type = "text", label, value, onChange }: InputProps) {
   return (
     <div>
       <TextField
+     
         id={`outlined-${label.toLowerCase()}-input`}
         label={label}
         type={type}
@@ -19,6 +20,8 @@ function Input({ type = "text", label, value, onChange }: InputProps) {
         onChange={onChange}
         autoComplete="current-password"
         className='w-96 rounded-lg'
+        required
+        
       />
     </div>
   );

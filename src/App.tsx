@@ -1,26 +1,15 @@
-import  { useState } from "react";
-import Input from "./Components/Input/Input";
 
+import { Route,Routes } from "react-router-dom"
+import React_form from "./Components/React_form/React_form"
+import Second_page from "./Components/Second_page/Second_page"
 function App() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
   return (
-    <>
-      <h1 className="text-3xl font-bold underline flex justify-center mt-12">
-        React Form
-      </h1> 
-
-      <div className="flex justify-center items-center flex-col gap-4 mt-20">
-        <Input label="Name" value={name} onChange={(e) => setName(e.target.value)} />
-        <Input label="Email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <Input label="Password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-      </div>
-
-      
-    </>
-  );
+    
+    <Routes>
+      <Route path='/' element={<React_form/>}/>
+      <Route path='/second' element={<Second_page/>}/>
+    </Routes>
+  )
 }
 
-export default App;
+export default App
