@@ -1,7 +1,7 @@
 
 import { Route,Routes } from "react-router-dom"
-import React_form from "./Components/React_form/React_form"
-import Second_page from "./Components/Second_page/Second_page"
+import React_form from "./Pages/React_form/React_form"
+import Second_page from "./Pages/Second_page/Second_page"
 function App() {
   return (
     

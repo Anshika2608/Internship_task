@@ -1,5 +1,5 @@
 import  { useState } from "react";
-import Input from "../Input/Input";
+import Input from "../../Components/Input/Input";
 
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
